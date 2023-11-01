@@ -1,0 +1,9 @@
+X-Sendmail-Cmdline: sendmail.pl -t -i
+To: trieuau@gmail.com
+Subject: [SmartEdu] Contact Form Message
+X-PHP-Originating-Script: 0:signup-form.php
+From: unknown
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+
+<b>Name:</b> unknown <br><b>Email:</b> unknown <br> <b>Phone:</b> unknown

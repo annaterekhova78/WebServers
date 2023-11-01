@@ -1,0 +1,281 @@
+<?php  session_start();
+if (!empty($_SESSION['login'])){
+	if ($_SESSION['group_user']==1)
+	{header('location:engine/answer.php?id_question=1&n=1');}
+	if (($_SESSION['group_user']==0) || ($_SESSION['group_user']==2))
+	{header('location:engine/vacancy.php');}
+}
+?>
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Вход. ТГУ Институт математики, физики и информационных технологий</title>
+        <meta name="description" content="Информационно-просветительский сайт кафедральных специальностей: бизнес-информатика и системный анализ">
+		<meta name="keywords" content="бакалавриат, кафедральные специальности,бизнес-информатика,системный анализ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+         <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+		 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style-basic.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$("#email").keyup(function(){
+					var email = $("#email").val();
+					if(email != 0)
+			{
+				if(isValidEmailAddress(email))
+				{
+					$("#validEmail").css({
+						"background-image": "url('assets/img/icon-img/yes.png')"
+					});
+				} else {
+					$("#validEmail").css({
+						"background-image": "url('assets/img/icon-img/no.png')"
+					});
+				}
+			} else {
+				$("#validEmail").css({
+					"background-image": "none"
+				});			
+			}
+		
+		});
+	
+	});
+	
+	function isValidEmailAddress(emailAddress) {
+ 		var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+ 		return pattern.test(emailAddress);
+	}
+	
+	</script> 
+	    </head>
+  <body>
+  <header class="header-area">
+  <header class="header-area">
+  <div class="theme-bg ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="welcome-area ptb-5">
+                               <a href="https://www.tltsu.ru/" target="_blank">
+							   <img src="../assets/img/logo/logo1.png" style="text-center"></a>
+                            </div>
+                        </div>
+						<div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="welcome-area ptb-5">
+                               <a href="https://www.tltsu.ru/education/institutions/institut-matematiki-fiziki-i-informacionnyx-texnologii" target="_blank">
+							   Институт математики, физики и информационных технологий</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="account-curr-lang-wrap f-right ptb-5" >                 
+                                    <a href="#">Тольятти, ул. Белорусская, д. 16В <br>+7 (8482) 44-93-82</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ </div>
+            <div class="header-bottom ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-5">
+                            <div class="logo ptb-7">
+                                <a href="index.html" ><img alt="ПГУПС" src="assets/img/logo/logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-11 col-lg-11 d-none d-lg-block">
+                            <div class="main-menu text-center mt-35">
+                                <nav>
+                                    <ul>
+                                        <li><a  href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li ><a href="study.html" >ОБУЧЕНИЕ</a></li>
+										<li><a href="practice.html">ПРАКТИКА</a></li>
+										<li><a href="living.html">ПРОЖИВАНИЕ</a></li>
+										<li><a href="vacancy.html">ТРУДОУСТРОЙСТВО</a></li>
+										<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+</div>
+						<!-- версия для мобильного телефона -->
+                        <div class="mobile-menu-area electro-menu d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                            <div class="mobile-menu">
+                                <nav id="mobile-menu-active">
+                                    <ul class="menu-overflow">
+                                        <li ><a href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li ><a href="study.html" >ОБУЧЕНИЕ</a></li>
+										<li><a href="practice.html">ПРАКТИКА</a></li>
+										<li><a href="living.html">ПРОЖИВАНИЕ</a></li>		
+										<li><a href="vacancy.html" >ТРУДОУСТРОЙСТВО</a></li>
+										<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<div class="shop-area pt-15 pb-75 gray-bg">
+	<div class="container" id="enter">
+		<div class="row">
+<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+
+		<h3 class="red" >Авторизация</h3>
+		<br>Логин (e-mail)<br> <input type="text" required  name="login"  id="login" ><br>
+		<br>Пароль<br><input type="password" required name="passw" id="passw"  >
+		<br><br>
+		<input type="submit" value=" Войти " class="but"  onClick ="getenter()"><br><br>
+		<a href="restrict.html">Забыли пароль?</a>
+<div id="mes"></div><!-- Сообщения при авторизации -->		
+</div>
+<div class="col-xl-4 col-4-6 col-md-12 col-sm-12">
+		<h3 class="red" >Регистрация</h3>
+		<br>Логин (e-mail)*<br><input type="text" id="email" name="email" width="30"><span id="validEmail"></span><br>
+		<br>Пароль*<br><input type="password" required  name="password" id="password"  ><br> 
+		<br>Название компании*<br><input type="text" required  name="company" id="company"><br>
+		
+		<br>Город*<br><input type="text" required  name="city" id="city"  ><br>	
+		<br>Адрес*<br><input type="text" required  name="address" id="address"  ><br>		
+ </div>
+		 <div class="col-xl-4 col-4-6 col-md-12 col-sm-12 mt-43">
+		<br>Номер телефона*<br><input type="phone" required  name="phone" id="phone"  ><br>
+		<br>Фамилия контактного лица<br><input type="text" id="surname" name="surname" ><br>
+		<br>Имя<br><input type="text" name="nam" id="nam"  ><br> 
+		<br>Отчество<br><input type="text"  name="secondname" id="secondname"><br>
+		<br>Статус*<br><select required  name="group_user" id="group_user" style="height:45px">
+		<option value=0>Представитель компании</option>
+		<option value=1>Сотрудник ТГУ</option>
+		</select>
+		<br><br>
+		<a href="#ms"><input type="submit" value=" Зарегистрироваться "  onClick = "getdetails()"/></a>
+<div  id="msg" ></div><!-- Сообщения при регистрации -->
+         </div>
+    </div>
+</div>
+</div>
+<footer>
+<div class="gray-bg-3 pt-17 pb-15">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="copyright text-center">
+				<p><a href="enter.html">Copyright © ТГУ Институт математики, физики и информационных технологий</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/elevetezoom.js"></script>
+        <script src="assets/js/ajax-mail.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+		<script src="assets/js/change_goods.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+/*авторизация через Ajax*/
+function getenter(){
+	var login = $('#login').val();
+    var passw = $('#passw').val();
+	var result="";
+    $.ajax({
+        type: "POST",
+        url: "engine/author.php",
+        data: {flogin:login,fpassw:passw}
+    }).done(function( result )
+        {
+            $("#mes").html( result );
+        });
+}
+</script>
+<script>
+/*регистрация через Ajax*/
+function getdetails(){
+	var email = $('#email').val();
+    var password = $('#password').val();
+	var company = $('#company').val();
+	var phone = $('#phone').val();
+	var city = $('#city').val();
+	var address = $('#address').val();
+	var surname = $('#surname').val();
+	var nam = $('#nam').val();
+	var secondname = $('#secondname').val();
+	var group_user = $('#group_user').val();
+	var result="";
+    $.ajax({
+        type: "POST",
+        url: "engine/registr.php",
+        data: {femail:email,fpassword:password,fcompany:company,fphone:phone,fcity:city,faddress:address,fsurname:surname,fnam:nam,fsecondname:secondname,fgroup_user:group_user}
+    }).done(function( result )
+        {
+            $("#msg").html( result );
+        });
+}
+
+</script> 
+
+
+<script>
+<!-- Маска ввода для телефона -->
+window.addEventListener("DOMContentLoaded", function() {
+function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+        var range = elem.createTextRange();
+        range.collapse(true);
+        range.moveEnd("character", pos);
+        range.moveStart("character", pos);
+        range.select()
+    }
+}
+
+function mask(event) {
+    var matrix = "+7 (___) ___ ____",
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, "");
+    if (def.length >= val.length) val = def;
+    this.value = matrix.replace(/./g, function(a) {
+        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+    if (event.type == "blur") {
+        if (this.value.length == 2) this.value = ""
+    } else setCursorPosition(this.value.length, this)
+};
+    var input = document.querySelector("#phone");
+	input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+
+});
+
+  </script>
+  </body>
+</html>

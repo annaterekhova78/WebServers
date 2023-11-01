@@ -1,0 +1,125 @@
+[Mon Oct 30 23:48:02 2023] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Oct 30 23:48:02 2023] [warn] pid file Z:/usr/local/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Oct 30 23:48:02 2023] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Oct 30 23:48:14 2023] [notice] Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 configured -- resuming normal operations
+[Mon Oct 30 23:48:14 2023] [notice] Server built: Apr 20 2012 18:42:30
+[Mon Oct 30 23:48:14 2023] [notice] Parent: Created child process 13420
+[Mon Oct 30 23:48:15 2023] [notice] Disabled use of AcceptEx() WinSock2 API
+[Mon Oct 30 23:48:15 2023] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Oct 30 23:48:16 2023] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Oct 30 23:48:16 2023] [notice] Child 13420: Child process is running
+[Mon Oct 30 23:48:16 2023] [notice] Child 13420: Acquired the start mutex.
+[Mon Oct 30 23:48:16 2023] [notice] Child 13420: Starting 25 worker threads.
+[Mon Oct 30 23:48:16 2023] [notice] Child 13420: Listening on port 443.
+[Mon Oct 30 23:48:16 2023] [notice] Child 13420: Listening on port 80.
+[Tue Oct 31 12:06:21 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:06:23 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:06:26 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:06:26 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:08:54 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:08:54 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:10:11 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:10:11 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:31:01 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:31:02 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:31:22 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:31:23 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:31:35 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:31:35 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:37:27 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:37:27 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:40:18 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:40:19 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:41:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:41:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:48:33 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:48:33 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:48:43 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:48:43 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:50:57 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:51:00 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:52:07 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:52:08 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:52:40 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:52:40 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:52:50 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:52:51 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:52:57 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:52:57 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:53:28 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:53:28 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:54:10 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:54:11 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:56:15 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 12:56:15 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:56:46 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 12:56:46 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:01:23 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:01:24 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:01:35 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:01:36 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:02:05 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:02:05 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:02:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:04:19 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:04:19 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:05:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:05:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:07:12 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:07:12 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:07:22 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:07:22 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:17:06 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:17:06 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:17:10 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:17:11 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:18:07 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:18:07 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:19:52 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:19:52 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:21:32 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:21:32 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:21:37 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:21:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:21:42 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:21:42 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:27:41 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:27:41 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:27:48 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:27:49 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:29:34 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:29:34 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:29:37 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:29:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:35:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:35:09 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:35:15 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:35:16 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:38:20 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:38:20 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:51:59 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:51:59 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:52:14 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:52:15 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:53:49 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:53:49 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 13:57:57 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 13:57:57 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:01:36 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:01:37 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 14:01:37 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 14:01:38 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:04:44 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 14:04:44 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:04:51 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 14:04:52 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:06:22 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map
+[Tue Oct 31 14:06:22 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:07:40 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/js/bootstrap.min.js.map
+[Tue Oct 31 14:07:40 2023] [error] [client 127.0.0.1] File does not exist: Z:/home/tgu-imfit/www/assets/css/bootstrap.min.css.map

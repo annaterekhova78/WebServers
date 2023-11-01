@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Вопрос-ответ.ТГУ Институт математики, физики и информационных технологий</title>
+        <meta name="description" content="Информационно-просветительский сайт кафедральных специальностей: бизнес-информатика и системный анализ">
+		<meta name="keywords" content="кафедральные специальности,бизнес-информатика,системный анализ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+         <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+		 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style-basic.css">
+		<link rel="stylesheet" href="assets/css/question.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+  <header class="header-area">
+  <div class="theme-bg ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="welcome-area ptb-5">
+                               <a href="https://www.tltsu.ru/" target="_blank">
+							   <img src="assets/img/logo/logo1.png" style="text-center"></a>
+                            </div>
+                        </div>
+						<div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="welcome-area ptb-5">
+                               <a href="https://www.tltsu.ru/education/institutions/institut-matematiki-fiziki-i-informacionnyx-texnologii" target="_blank">
+							   Институт математики, физики и информационных технологий</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12" >
+                            <div class="account-curr-lang-wrap f-right ptb-5" >                 
+                                    <a href="#">Тольятти, ул. Белорусская, д. 16В <br>+7 (8482) 44-93-82</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ </div>
+            <div class="header-bottom transparent-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-5">
+                            <div class="logo ptb-7">
+                                <a href="" ><img alt="" src="assets/img/logo/logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-11 col-lg-11 d-none d-lg-block">
+                            <div class="main-menu text-center mt-35">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li><a href="study.html">ОБУЧЕНИЕ</a></li>
+										<li><a href="practice.html">ПРАКТИКА</a></li>
+										<li><a href="living.html">ПРОЖИВАНИЕ</a></li>
+										<li><a href="vacancy.html">ТРУДОУСТРОЙСТВО</a></li>
+										<li class="active"><a href="faq.html" class="active">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+</div>
+						<!-- версия для мобильного телефона -->
+                        <div class="mobile-menu-area electro-menu d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                            <div class="mobile-menu">
+							<nav id="mobile-menu-active">
+							    <ul class="menu-overflow">
+                                        <li><a  href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li><a href="study.html">ОБУЧЕНИЕ</a></li>
+										<li><a href="practice.html">ПРАКТИКА</a></li>
+										<li><a href="living.html">ПРОЖИВАНИЕ</a></li>
+										<li><a href="vacancy.html">ТРУДОУСТРОЙСТВО</a></li>
+										<li class="active"><a href="" class="active">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+						</div>
+                       </div>
+                    </div>
+          </header>
+        <div class="breadcrumb-area pt-75 pb-75 bg-img" style="background-image:url(assets/img/banner/banner-2.jpg);">
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h2 id="w">ВОПРОС-ОТВЕТ</h2>
+                    <ul>
+					<li><a href="index.html"><i class="ti-home red" alt="Главная" title="Главная"></i></a></li>
+                     <li ><a href="#w">ИНФОРМАЦИЯ - КЛЮЧ К УСПЕХУ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shop-area pt-75 pb-75 gray-bg">
+		     <div class="container">
+	             <div class="row">
+					 <div class="col-12">
+					 <h3 class="red">Частые вопросы </h3>
+                 <div class="section__text">
+                 <div class="accordion">
+<?php include "engine/bd.php";
+$fg="SELECT * FROM im_question WHERE status=1 ORDER BY date_question";
+$fg_ex=mysql_query($fg);
+while($fg_res=mysql_fetch_array($fg_ex)){
+   echo '<div class="accordion__item">
+                     <div class="accordion__item__trigger">
+                       '.$fg_res['question'].'
+                     </div>
+                     <div class="accordion__item__content">
+                       <p>'.$fg_res['answer'].'</p>
+                     </div>
+                   </div>';
+}
+?>
+					<div class="accordion__item">
+                   <div class="accordion__item__trigger" style="border:none;">
+                   <h3 class="red" ><u><i class="ti-arrow-right red" style="font-weight:bold;font-size:22px"></i> Задать вопрос</u></a></h3>
+                   </div>
+                   <div class="accordion__item__content" id="enter">
+                    <textarea name="question" id="question" placeholder="Ваш вопрос" rows="5"></textarea>
+					<input type="submit" value=" Отправить " onclick="getquestion()">
+					<div id="mes"></div>
+                   </div>
+                 </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+                        <div class="about-us-img  wow fadeInLeft">
+                            <img alt="ПГУПС" src="assets/img/banner/4.jpg" >
+                        </div>
+<div class="about-us-area mb-50 mt-50" >
+	<div class="container">
+		<div class="row">
+	<div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 text-center" >
+        <a class="btn-style" href="study.html">ОБУЧЕНИЕ</a>
+    </div>
+	    <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 section-title text-center" >
+        <h4 class="text-center"><font size=+2>Хотите узнать подробную информацию?</font></h4>
+    </div>
+	<div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 text-center" >
+        <a class="btn-style" href="vacancy.html">ТРУДОУСТРОЙСТВО</a>
+    </div>
+		</div>
+	</div>
+</div>
+<footer class="footer-area">
+            <div class="footer-top ptb-20 gray-bg-2">
+                <div class="container">
+                    <div class="row">
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                  <ul>   
+                                        <li> <a href="index.html" >Главная</a> </li>
+										 <li> <a href="#" class="active">Вопрос-ответ</a> </li>			
+                                   </ul>  
+                                </div>
+
+                            </div>
+                        </div>
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                     <ul>
+									    <li> <a href="study.html">Обучение</a> </li>
+										<li> <a href="practice.html">Практика</a> </li>
+                                     </ul>
+                                </div>
+
+                            </div>
+                        </div>
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                    <ul>
+									 <li> <a href="living.html">Проживание</a>
+									</li>
+									<li> <a href="vacancy.html">Трудоустройство</a>
+									</li>
+                                    </ul> 
+                                </div>
+
+                            </div>
+                        </div>
+	<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget2">
+                                <div class="footer-info-wrapper">
+                                    <div class="footer-logo">
+                                        <a href="index.html">
+                                            <img src="assets/img/logo/logo2.png" alt="ТГУ" align="right">
+										</a>
+                                    </div>
+									<div class="footer-content text-left">
+										<ul>
+										<li> <a href="contact.html">Контакты</a> </li>
+										</ul>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom gray-bg-3 pt-17 pb-15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright text-center">
+                                <p><a href="enter.html">Copyright © ТГУ Институт математики, физики и информационных технологий <i class="ti-user"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</footer>
+        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/elevetezoom.js"></script>
+        <script src="assets/js/ajax-mail.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+		<script src="assets/js/change_goods.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="assets/js/question.js"></script>
+<script>
+/*сохранение вопроса в БД через Ajax*/
+function getquestion(){
+	var question = $('#question').val();
+	var result="";
+    $.ajax({
+        type: "POST",
+        url: "engine/add_question.php",
+        data: {fquestion:question}
+    }).done(function( result )
+        {
+            $("#mes").html( result );
+        });
+}
+</script>
+    </body>
+</html>

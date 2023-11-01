@@ -1,0 +1,17 @@
+#html-страницы обрабатывают php-код
+RemoveHandler .html .htm 
+AddType application/x-httpd-php .php .htm .html .phtml
+
+# Время жизни сессии в секундах
+php_value session.gc_maxlifetime 36000
+
+# Время жизни куки в секундах
+php_value session.cookie_lifetime 36000
+
+#Кодировка
+AddDefaultCharset UTF-8
+
+# человекопонятные URL
+RewriteEngine on
+RewriteRule ^([a-z]+)/([0-9]+)/? $vacancy.html [L]
+

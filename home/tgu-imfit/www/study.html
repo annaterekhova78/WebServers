@@ -1,0 +1,258 @@
+﻿<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Обучение. ТГУ Институт математики, физики и информационных технологий</title>
+       <meta name="description" content="Информационно-просветительский сайт Института математики, физики и информационных технологий ТГУ">
+		<meta name="keywords" content="Прикладная информатика,Цифровая трансформация бизнеса,Разработка программного обеспечения,Разработка программного обеспечения,Software Engineering">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style-basic.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+  <header class="header-area">
+  <div class="theme-bg ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-xs-12" >
+                            <div class="welcome-area ptb-5 text-center">
+                               <a href="https://www.tltsu.ru/" target="_blank">
+							   <img src="assets/img/logo/logo1.png" ></a>
+                            </div>
+                        </div>
+						<div class="col-lg-7 col-md-7 col-xs-12" >
+                            <div class="welcome-area ptb-5 text-center">
+                               <a href="https://www.tltsu.ru/education/institutions/institut-matematiki-fiziki-i-informacionnyx-texnologii" target="_blank">
+							   Институт математики, физики<br>и информационных технологий</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-xs-12" >
+                            <div class="account-curr-lang-wrap f-right ptb-5" >                 
+                                    <a href="#">Тольятти, ул. Белорусская, д. 16В <br>+7 (8482) 44-93-82</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ </div>
+            <div class="header-bottom transparent-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-5">
+                            <div class="logo ptb-7">
+                                <a href="index.html" ><img alt="ПГУПС" src="assets/img/logo/logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-11 col-lg-11 d-none d-lg-block">
+                            <div class="main-menu text-center mt-35">
+                                <nav>
+                                    <ul>
+                                        <li><a  href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li class="active"><a href="" class="active" >ОБУЧЕНИЕ</a></li>
+										<li><a href="practice.html">ПРАКТИКА</a></li>
+										<li><a href="living.html">ПРОЖИВАНИЕ</a></li>
+										<li><a href="vacancy.html">ТРУДОУСТРОЙСТВО</a></li>
+										<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+</div>
+						<!-- версия для мобильного телефона -->
+                        <div class="mobile-menu-area electro-menu d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                            <div class="mobile-menu">
+                                <nav id="mobile-menu-active">
+                                    <ul class="menu-overflow">
+                                        <li ><a href="index.html" >ГЛАВНАЯ</a></li>
+                                        <li class="active"><a href="" class="active" >ОБУЧЕНИЕ</a></li>
+										<li ><a href="practice.html">ПРАКТИКА</a>				
+										<li><a href="vacancy.html" >ТРУДОУСТРОЙСТВО</a></li>
+										<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+										<li><a href="contact.html">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div  class="breadcrumb-area pt-75 pb-75 bg-img" style="background-image:url(assets/img/banner/banner-2.jpg);">
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h2>ОБУЧЕНИЕ</h2>
+                    <ul >
+					<li><a href="index.html" alt="Главная" title="Главная"><i class="ti-home red" ></i></a></li>
+					<?php include "engine/bd.php";
+					if (empty($_GET['id_dep']) AND empty ($_GET['dep'])) {$_GET['id_dep']=1;$_GET['dep']="Прикладная математика и информатика";}
+					$i=0;
+					$dep="SELECT * FROM im_department";
+					$dep_ex=mysql_query($dep);
+					while ($dep_p=mysql_fetch_array($dep_ex)){
+					$i++;
+					$act="";
+					if ($_GET['id_dep']==$i) {$act='active';}
+					  echo' <li ><a class="'.$act.'" href="?id_dep='.$dep_p["id_dep"].'&dep='.$dep_p["department"].'&#dp">'.$dep_p["department"].'</a></li>';
+					   
+					   }
+						?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<div class="shop-area pt-75 pb-75 gray-bg">
+		     <div class="container">
+	             <div class="row">
+<div class="col-12 mb-30">
+<h3 class="red">Дисциплины на кафедре &laquo;<?php echo $_GET['dep'] ?>&raquo;</h3>
+
+<?php
+$id_dep=$_GET['id_dep'];
+$subn="SELECT * FROM im_subject WHERE id_dep='$id_dep'";
+$subn_ex=mysql_query($subn);
+$num=mysql_num_rows($subn_ex);
+$lim1=ceil($num/2);
+if ($num==0)
+{ echo "<div class='blue mt-25'><h4 style='text-align:center'>База данных ещё не заполнена</h4></div>";}
+?>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+<ol>
+<?php
+$sub="SELECT * FROM `im_subject`  WHERE id_dep='$id_dep' LIMIT 0 , $lim1";
+$sub_ex=mysql_query($sub);
+while ($sub_pr=mysql_fetch_array($sub_ex))
+{echo "<li>".$sub_pr['subject']."</li>";
+}
+?>
+</ol>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+<?php 
+$lim1=ceil($num/2);
+$lim2=$num - $lim1 +1;
+$sub="SELECT * FROM `im_subject` WHERE id_dep='$id_dep' LIMIT $lim2 , $num";
+echo "<ol start='".($lim2+1)."'>";
+$sub_ex=mysql_query($sub);
+while ($sub_pr=mysql_fetch_array($sub_ex))
+{echo "<li>".$sub_pr['subject']."</li>";
+}
+?>
+</ol>
+         </div>
+    </div>
+</div>
+</div>
+<div class="about-us-area pt-50 pb-50">
+	<div class="container">
+		<div class="row">
+	<div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 text-center" >
+        <a class="btn-style" href="vacancy.html">ТРУДОУСТРОЙСТВО</a>
+    </div>
+	    <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 section-title text-center" >
+        <h4 class="text-center"><font size=+2>Хотите узнать подробную информацию?</font></h4>
+    </div>
+	<div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 text-center" >
+        <a class="btn-style" href="living.html">ПРОЖИВАНИЕ</a>
+    </div>
+		</div>
+	</div>
+</div>
+<footer class="footer-area">
+            <div class="footer-top ptb-20 gray-bg-2">
+                <div class="container">
+                    <div class="row">
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                  <ul>   
+                                        <li> <a href="index.html" >Главная</a> </li>
+										 <li> <a href="faq.html">Вопрос-ответ</a> </li>			
+                                   </ul>  
+                                </div>
+
+                            </div>
+                        </div>
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                     <ul>
+									    <li> <a href="" class="active">Обучение</a> </li>
+										<li> <a href="practice.html">Практика</a> </li>
+                                     </ul>
+                                </div>
+
+                            </div>
+                        </div>
+					   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+							<div class="footer-content">
+                                    <ul>
+									 <li> <a href="living.html">Проживание</a>
+									</li>
+									<li> <a href="vacancy.html">Трудоустройство</a>
+									</li>
+                                    </ul> 
+                                </div>
+
+                            </div>
+                        </div>
+	<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget2">
+                                <div class="footer-info-wrapper">
+                                    <div class="footer-logo">
+                                        <a href="index.html">
+                                            <img src="assets/img/logo/logo2.png" alt="ТГУ" align="right">
+										</a>
+                                    </div>
+									<div class="footer-content text-left">
+										<ul>
+										<li> <a href="contact.html">Контакты</a> </li>
+										</ul>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom gray-bg-3 pt-17 pb-15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright text-center">
+                                <p><a href="enter.html">Copyright © ТГУ Институт математики, физики и информационных технологий</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</footer>
+        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/elevetezoom.js"></script>
+        <script src="assets/js/ajax-mail.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+		<script src="assets/js/change_goods.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	    </body>
+</html>

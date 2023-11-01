@@ -1,0 +1,74 @@
+
+
+/* Section */
+.section {
+  padding: 80px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section__header {
+  width: 100%;
+  max-width: 2500px;
+  margin: 80px auto 400px;
+}
+
+.section__title {
+  text-align: center;
+  color: #333;
+  font-family: 'IBM Plex Serif', cursive;
+}
+
+.section__title:after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #228b22;
+}
+
+.section__text{
+  font-size: 16px;
+  color: #333;
+}
+
+
+/*Accodrion*/
+.accordion{
+}
+
+.accordion__item{
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.accordion__item__trigger{
+  padding: 10px;
+  border:1px solid #56aaff;
+}
+
+.accordion__item__content{
+  padding: 10px;
+  border-top: none;
+  display: none;
+  text-align: left;
+  font-size:16px;
+}
+
+.accordion__item__content  p{
+	font-size:16px;
+}
+.accordion__item__content input.ncy{
+outline:1px solid #c0c0c0;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content:center;
+}
+
+
